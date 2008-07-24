@@ -1,7 +1,7 @@
 Summary: 	A free ATSC A/52 stream decoder
 Name: 		a52dec
 Version: 	0.7.4
-Release: 	11%{?dist}
+Release: 	12%{?dist}
 License: 	GPLv2
 Group: 		System Environment/Libraries
 URL: 		http://liba52.sourceforge.net/
@@ -81,6 +81,9 @@ rm -rf $RPM_BUILD_ROOT
 #---------------------------------------------------------------------
 
 %changelog
+* Thu Jul 24 2008 David Juran <david@juran.se> - 0.7.4-12
+- Bump Release for RpmFusion
+
 * Mon Oct  1 2007 David Juran <david@juran.se> - 0.7.4-11
 - Fix Licence tag to be GPLv2
 - Drop %makeinstall macro
