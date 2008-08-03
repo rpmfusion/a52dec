@@ -1,7 +1,7 @@
 Summary: 	A free ATSC A/52 stream decoder
 Name: 		a52dec
 Version: 	0.7.4
-Release: 	12%{?dist}
+Release: 	13%{?dist}
 License: 	GPLv2
 Group: 		System Environment/Libraries
 URL: 		http://liba52.sourceforge.net/
@@ -15,7 +15,6 @@ BuildRequires:	%{__perl}
 Summary:	Development files needed for a52dec
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	djbfft-devel
 
 #---------------------------------------------------------------------
 
@@ -81,8 +80,14 @@ rm -rf $RPM_BUILD_ROOT
 #---------------------------------------------------------------------
 
 %changelog
+* Sun Aug 03 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 0.7.4-13
+- integrate a fix from livna that got lost
+
 * Thu Jul 24 2008 David Juran <david@juran.se> - 0.7.4-12
 - Bump Release for RpmFusion
+
+* Sun Nov 11 2007 Dominik Mierzejewski <dominik [AT] greysector [DOT] net> 0.7.4-11.1
+- Really drop djbfft
 
 * Mon Oct  1 2007 David Juran <david@juran.se> - 0.7.4-11
 - Fix Licence tag to be GPLv2
