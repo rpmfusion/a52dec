@@ -80,7 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 #---------------------------------------------------------------------
 
 %changelog
-* Sun Aug 03 2006 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 0.7.4-12
+* Sun Aug 03 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 0.7.4-12
 - integrate a fix from livna that got lost
 
 * Thu Jul 24 2008 David Juran <david@juran.se> - 0.7.4-12
