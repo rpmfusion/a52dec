@@ -1,13 +1,14 @@
 Summary: 	A free ATSC A/52 stream decoder
 Name: 		a52dec
 Version: 	0.7.4
-Release: 	17%{?dist}
+Release: 	18%{?dist}
 License: 	GPLv2
 Group: 		System Environment/Libraries
 URL: 		http://liba52.sourceforge.net/
 Source0: 	http://liba52.sourceforge.net/files/%{name}-%{version}.tar.gz
 Patch0:		a52dec-configure-optflags.patch
 Patch1:		a52dec-0.7.4-rpath64.patch
+Patch2:         liba52-silence.patch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	%{__perl}
 
@@ -36,6 +37,7 @@ This package contains development files for a52dec.
 %setup -q
 %patch0
 %patch1 -p1
+%patch2 -p1
 %{__perl} -pi -e 's/-prefer-non-pic\b/-prefer-pic/' \
   configure liba52/configure.incl
 
@@ -80,6 +82,9 @@ rm -rf $RPM_BUILD_ROOT
 #---------------------------------------------------------------------
 
 %changelog
+* Sun Mar 10 2013 Nicolas Chauvet <kwizart@gmail.com> - 0.7.4-18
+- Add silence patch as we don't built with DJBFFT enabled
+
 * Sun Mar 03 2013 Nicolas Chauvet <kwizart@gmail.com> - 0.7.4-17
 - Mass rebuilt for Fedora 19 Features
 
