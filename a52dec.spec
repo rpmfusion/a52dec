@@ -1,21 +1,21 @@
-Summary: 	A free ATSC A/52 stream decoder
-Name: 		a52dec
-Version: 	0.7.4
-Release: 	20%{?dist}
-License: 	GPLv2
-Group: 		System Environment/Libraries
-URL: 		http://liba52.sourceforge.net
-Source0: 	%{url}/files/%{name}-%{version}.tar.gz
-Patch0:		a52dec-configure-optflags.patch
-Patch1:		a52dec-0.7.4-rpath64.patch
-Patch2:         liba52-silence.patch
+Summary:    A free ATSC A/52 stream decoder
+Name:       a52dec
+Version:    0.7.4
+Release:    20%{?dist}
+License:    GPLv2
+Group:      System Environment/Libraries
+URL:        http://liba52.sourceforge.net
+Source0:    %{url}/files/%{name}-%{version}.tar.gz
+Patch0:     a52dec-configure-optflags.patch
+Patch1:     a52dec-0.7.4-rpath64.patch
+Patch2:     liba52-silence.patch
 
-BuildRequires:	perl
+BuildRequires:  perl
 
 %package devel
-Summary:	Development files needed for a52dec
-Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Summary:    Development files needed for a52dec
+Group:      Development/Libraries
+Requires:   %{name} = %{version}-%{release}
 
 
 %description
