@@ -1,7 +1,7 @@
 Summary:    A free ATSC A/52 stream decoder
 Name:       a52dec
 Version:    0.7.4
-Release:    20%{?dist}
+Release:    21%{?dist}
 License:    GPLv2
 Group:      System Environment/Libraries
 URL:        http://liba52.sourceforge.net
@@ -65,6 +65,9 @@ This package contains development files for a52dec.
 %{_libdir}/liba52.so
 
 %changelog
+* Tue Aug 23 2016 Nicolas Chauvet <nicolas.chauvet@kwizart.fr> - 0.7.4-21
+- Fix macro in comment
+
 * Tue Aug 16 2016 Sérgio Basto <sergio@serjux.com> - 0.7.4-20
 - Clean spec, with Vascom, rfbz #4193, add license tag
 
@@ -97,7 +100,7 @@ This package contains development files for a52dec.
 
 * Mon Oct  1 2007 David Juran <david@juran.se> - 0.7.4-11
 - Fix Licence tag to be GPLv2
-- Drop %makeinstall macro
+- Drop %%makeinstall macro
 - Drop static archive
 - Drop djbfft
 
