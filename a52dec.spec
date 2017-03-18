@@ -1,7 +1,7 @@
 Summary:    A free ATSC A/52 stream decoder
 Name:       a52dec
 Version:    0.7.4
-Release:    21%{?dist}
+Release:    22%{?dist}
 License:    GPLv2
 Group:      System Environment/Libraries
 URL:        http://liba52.sourceforge.net
@@ -65,6 +65,9 @@ This package contains development files for a52dec.
 %{_libdir}/liba52.so
 
 %changelog
+* Sat Mar 18 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 0.7.4-22
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
+
 * Tue Aug 23 2016 Nicolas Chauvet <nicolas.chauvet@kwizart.fr> - 0.7.4-21
 - Fix macro in comment
 
